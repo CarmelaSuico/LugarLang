@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="48dp">
+
+        <!-- Back button -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/text_dark" />
+
+        <!-- Trip ID -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trip ID:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTripId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20260228-4738"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Details card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_trip_card"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvBusCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bus Code:"
+                style="@style/LabelText"/>
+
+            <TextView
+                android:id="@+id/tvPlateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plate Number:"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvFranchise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Franchise:"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvTerminalOrigin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terminal Location (Origin):"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination:"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvDepartureTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assigned Departure Time:"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvETA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimated Arrival Time:"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginVertical="12dp"/>
+
+            <TextView
+                android:id="@+id/tvDriver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assigned Driver:"
+                style="@style/LabelText"/>
+
+            <TextView
+                android:id="@+id/tvConductor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assigned Conductor:"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Info:"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginVertical="12dp"/>
+
+            <TextView
+                android:id="@+id/tvMaintenanceStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maintenance Status:"
+                style="@style/LabelText"/>
+
+            <TextView
+                android:id="@+id/tvTripStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip Status:"
+                style="@style/LabelText"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Edit button -->
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✏ Edit"
+                android:textColor="@color/text_dark"
+                android:background="@drawable/bg_edit_btn"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
