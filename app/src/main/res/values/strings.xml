@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LugarLang_Login</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="operator_amp_conductor_portal"><![CDATA[Operator & Conductor Portal]]></string>
+    <string name="lugarlang">LUGARLANG!</string>
+    <string name="lglg">LUGARLANG!</string>
+    <string name="operator_conductor_portal"><![CDATA[Operator & Conductor Portal]]></string>
+    <string name="value">Value</string>
+    <string name="go_back">Go back</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter password</string>
+    <string name="email">Email</string>
+    <string name="enter_email">Enter Email Address\n</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_new_pass">Enter New Password</string>
+    <string name="verify_new_password">Verify New Password</string>
+    <string name="confirm_new_pass">Confirm New Password</string>
+    <string name="confirm">CONFIRM</string>
+</resources>
