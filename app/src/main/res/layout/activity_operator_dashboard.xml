@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- Top search bar -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:paddingTop="48dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="@color/text_gray" />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search"
+                android:textSize="14sp"
+                android:background="@null"
+                android:paddingHorizontal="8dp"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@android:drawable/ic_btn_speak_now"
+                app:tint="@color/text_gray" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivNotif"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_dialog_info"
+            android:layout_marginStart="12dp"
+            app:tint="@color/text_dark" />
+    </LinearLayout>
+
+    <!-- Title row -->
+    <LinearLayout
+        android:id="@+id/titleRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="8dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/topBar">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SCHEDULED BUS\nTRIPS"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:lineSpacingExtra="2dp"/>
+
+        <ImageView
+            android:id="@+id/btnAddTrip"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_input_add"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/text_dark" />
+
+        <ImageView
+            android:id="@+id/btnFilter"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/text_dark" />
+    </LinearLayout>
+
+    <!-- Trip list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTrips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleRow"
+        android:layout_above="@id/bottomNav"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"/>
+
+    <!-- Bottom nav pill -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_nav_pill"
+            android:orientation="horizontal"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="16dp"
+            android:gravity="center">
+
+            <!-- Dashboard (active) -->
+            <LinearLayout
+                android:id="@+id/navDashboard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_nav_active"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@android:drawable/ic_menu_directions"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <!-- Route Management -->
+            <LinearLayout
+                android:id="@+id/navRouteManagement"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@android:drawable/ic_menu_mylocation"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Route Management"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+            <!-- Settings -->
+            <LinearLayout
+                android:id="@+id/navSettings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@android:drawable/ic_menu_preferences"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

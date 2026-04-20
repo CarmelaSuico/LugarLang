@@ -8,9 +8,15 @@
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:449835172487:android:3a5cee69aefcffa8f9ae22",
         "android_client_info": {
           "package_name": "com.usc.firebasepractice"
+=======
+        "mobilesdk_app_id": "1:449835172487:android:06af554dd941203cf9ae22",
+        "android_client_info": {
+          "package_name": "com.usc.lugarlangfinal"
+>>>>>>> 8ea93ce348105dc75d02c2170edf79010d66dd50
         }
       },
       "oauth_client": [],
@@ -27,9 +33,15 @@
     },
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:449835172487:android:06af554dd941203cf9ae22",
         "android_client_info": {
           "package_name": "com.usc.lugarlangfinal"
+=======
+        "mobilesdk_app_id": "1:449835172487:android:2e8c0043a373aeaef9ae22",
+        "android_client_info": {
+          "package_name": "usc.edu.firebasetesting"
+>>>>>>> 8ea93ce348105dc75d02c2170edf79010d66dd50
         }
       },
       "oauth_client": [],
@@ -62,6 +74,7 @@
           "other_platform_oauth_client": []
         }
       }
+<<<<<<< HEAD
     },
     {
       "client_info": {
@@ -81,6 +94,8 @@
           "other_platform_oauth_client": []
         }
       }
+=======
+>>>>>>> 8ea93ce348105dc75d02c2170edf79010d66dd50
     }
   ],
   "configuration_version": "1"

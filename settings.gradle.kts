@@ -19,6 +19,11 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "LugarLang_Login"
 include(":app")
  
+=======
+rootProject.name = "LugarLang"
+include(":app")
+>>>>>>> 8ea93ce348105dc75d02c2170edf79010d66dd50

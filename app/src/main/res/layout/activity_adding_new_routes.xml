@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="20dp"
+    android:paddingTop="48dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/text_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adding New Routes"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <!-- Route Management section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Route Management"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_trip_card"
+        android:padding="16dp"
+        android:layout_marginBottom="32dp">
+
+        <Button
+            android:id="@+id/btnAddRoute"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Route"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="@drawable/bg_button_magenta"
+            android:paddingVertical="14dp" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <!-- Bus/Jeep Management section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bus/Jeep Management"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_dark"
+        android:layout_marginBottom="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_trip_card"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- Add Bus/Jeep -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnAddBusJeep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add Bus/Jeep"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/bg_button_magenta"
+                android:paddingVertical="14dp" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_input_add"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <!-- Edit Bus/Jeep -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEditBusJeep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit Bus/Jeep"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/bg_button_magenta"
+                android:paddingVertical="14dp" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_menu_edit"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

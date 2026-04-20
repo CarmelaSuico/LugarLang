@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">LugarLang_Login</string>
     <string name="login">LOGIN</string>
     <string name="forgot_password">Forgot password?</string>
@@ -21,4 +22,7 @@
     <string name="verify_new_password">Verify New Password</string>
     <string name="confirm_new_pass">Confirm New Password</string>
     <string name="confirm">CONFIRM</string>
+=======
+    <string name="app_name">LugarLang</string>
+>>>>>>> 8ea93ce348105dc75d02c2170edf79010d66dd50
 </resources>

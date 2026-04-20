@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
+<<<<<<< HEAD
     <style name="Base.Theme.LugarLang_Login" parent="Theme.Material3.DayNight.NoActionBar">
+=======
+    <style name="Base.Theme.LugarLang" parent="Theme.Material3.DayNight.NoActionBar">
+>>>>>>> 8ea93ce348105dc75d02c2170edf79010d66dd50
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
